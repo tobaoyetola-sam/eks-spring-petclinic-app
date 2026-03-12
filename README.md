@@ -22,7 +22,7 @@ You first need to clone the project locally:
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 ```
-If you are using Maven, you can start the application on the command-line as follows:
+If you are using Maven, you can start the application on the command-line as follows::
 
 ```bash
 ./mvnw spring-boot:run
