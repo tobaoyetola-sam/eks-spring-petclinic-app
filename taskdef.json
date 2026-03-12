@@ -4,11 +4,17 @@
   "requiresCompatibilities": ["FARGATE"],
   "cpu": "256",
   "memory": "512",
+  "executionRoleArn": "arn:aws:iam::085430451857:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "spring-petclinic",
       "image": "<IMAGE1_URI>",
-      "portMappings": [{ "containerPort": 8080 }]
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ]
     }
   ]
 }
