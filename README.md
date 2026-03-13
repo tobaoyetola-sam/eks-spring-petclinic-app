@@ -4,7 +4,7 @@
 
 ## Understanding the Spring Petclinic application with a few diagrams
 
-See the presentation here::  
+See the presentation here:
 [Spring Petclinic Sample Application (legacy slides)](https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application?slide=20).
 
 > **Note:** These slides refer to a legacy, pre–Spring Boot version of Petclinic and may not reflect the current Spring Boot–based implementation.  
