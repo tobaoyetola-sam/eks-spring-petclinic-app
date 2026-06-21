@@ -37,15 +37,12 @@ phases:
       - echo Pushing Docker images to ECR...
       - docker push $REPOSITORY_URI:$BRANCH
       - docker push $REPOSITORY_URI:$IMAGE_TAG
-      - echo "Writing image tag for deploy stage..."
-      - echo $IMAGE_TAG > image_tag.txt
       - echo "Rewriting image tag in petclinic-deployment.yaml..."
       - sed -i "s|spring-petclinic:main|spring-petclinic:$IMAGE_TAG|g" petclinic-deployment.yaml
-      - cat petclinic-deployment.yaml | grep image:
+      - "cat petclinic-deployment.yaml | grep image:"
 
 artifacts:
   files:
-    - image_tag.txt
     - petclinic-deployment.yaml
 
 cache:
